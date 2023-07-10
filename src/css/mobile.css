@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --corDeFundo: #E5BED9;
+  --azulprincipal:#8AD6F6;
+  --corDasLetrasPrincipais:#4D6E82;
+  --corDoCard:#8F4252;
+  --bordaDoCard:#3D7BA0;
+  --botaoDeCompra:#5ab45a;
+  
+}
+/* 
+#8F4252 -- cordovan
+#3D7BA0 -- cerulean
+#4D6E82 -- payne's Gray
+#E5BED9
+#8AD6F6 */
+body {
+  background-color: var(--corDeFundo);
+  height: 100%;
+  width: 100%;
+}
+header {
+  background-color:var(--azulprincipal);
+  height: 10%;
+  border-bottom-right-radius: 2vh;
+  border-bottom-left-radius: 2vh;
+  width: 100%;
+}
+header img {
+  margin-left: 11px;
+  height: 15vh;
+}
+.header__h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header__h1 h1 {
+  margin: 0 auto;
+  font-weight:800 ;
+  font-size: 40px;
+  color: var(--corDasLetrasPrincipais);
+  font-family: "Cookie", cursive;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Cookie", cursive;
+}
+ul li,
+a {
+  font-size: 22px;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+  margin: 1px;
+  padding: 5px;
+  color:var(--corDasLetrasPrincipais);
+}
+.sobremim {
+  margin: 10vh 10px 10px 10px;
+  background-color: #8ad6f6;
+  padding: 10px;
+  border-radius: 10px;
+  color:var(--corDasLetrasPrincipais);
+  background-image: url(../img/mlp-star-cutie-mark-11549726852fpmyjl1rnc-removebg-preview.png);
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+}
+.sobremim h3 {
+  font-size: 15px;
+  font-family: "Cookie", cursive;
+  text-transform: capitalize;
+  font-size: 36px;
+}
+.sobremim p {
+  font-size: 22px;
+  font-weight: 400;
+}
+.dFlex-480px {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  height:51vh;
+  width: 30vh;
+  display: block;
+  background-color: var(--corDoCard);
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+}
+.card__img img {
+  height: 25vh;
+  display: block;
+  margin: 10px auto 0 auto;
+  border: 1px solid var(--bordaDoCard);
+  border-radius: 1px;
+}
+.card button {
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+  padding: 2px;
+  font-size: 16px;
+  background-color: var(--botaoDeCompra);
+}
+.local__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.local__img img {
+  border-radius: 10px;
+  border: 1px solid var(--bordaDoCard);
+  width:50%;
+  height: 20%;
+}
+.bgAlternativo {
+  height: max-content;
+  background-image: url(../img/izzy_moonbow_cutiemark_vector_by_lavender_bases_derqki5-fullview.png);
+}
+footer p {
+  font-size: 4px;
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+  
+  header img {
+    margin-left: 1px;
+    height: 10vh;
+  }
+  .header__h1 h1 {
+    font-size:20px;
+    font-weight: 500;
+  }
+  ul li,
+  a {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 1px;
+  }
+  .sobremim {
+    background-position: center;
+    background-size: 150px;
+  }
+  .sobremim h3 {
+    font-size: xx-large;
+  }
+  .sobremim p {
+    font-size: 9px;
+    font-weight: 400;
+  }
+  .dFlex-480px {
+    flex-direction: column;
+  }
+  .card {
+    height: 200px;
+    width: 130px;
+    font-size: 10px;
+  }
+  .card__img img {
+    height: 100px;
+  }
+  .local__img img {
+    width: 70%;
+    height: 40%;
+  }
+  footer p {
+    font-size: 3px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  img {
+    margin-left: 1px;
+    height: 15vh;
+  }
+  .header__h1 h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  ul li,
+  a {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 2px;
+  }
+  .sobremim h3 {
+    font-size: xx-large;
+  }
+  .sobremim p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .dFlex-480px {
+    flex-direction: column;
+  }
+  .card {
+    height: 200px;
+    width: 130px;
+    font-size: 12px;
+  }
+  .card__img img {
+    height: 110px;
+  }
+  .card button {
+   margin-top: 5px;
+  }
+  .local__img img {
+    width: 70%;
+    height: 40%;
+  }
+  footer p {
+    font-size: 4px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  img {
+    margin-left: 1px;
+    height: 15vh;
+  }
+  .header__h1 h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  ul li,
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+  }
+  .sobremim {
+    background-position: center;
+    background-size: 150px;
+  }
+  .sobremim h3 {
+    font-size: 26px;
+  }
+  .sobremim p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .dFlex-480px {
+    flex-direction: row;
+  }
+  .card {
+    height: 200px;
+    width: 130px;
+    font-size: 16px;
+  }
+  .card__img img {
+    height: 110px;
+  }
+  .local__img img {
+    width: 70%;
+    height: 40%;
+  }
+  footer p {
+    font-size: 6px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  img {
+    height: 10vh;
+  }
+  .header__h1 h1 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  ul li,
+  a {
+    font-size: 22px;
+    font-weight: 00;
+    padding: 6px;
+  }
+  .sobremim h3 {
+    font-size: 26px;
+  }
+  .sobremim p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .dFlex-480px {
+    flex-direction: row;
+  }
+  .card {
+    height: 270px;
+    width: 160px;
+    font-size: 20px;
+  }
+  .card p {
+    margin: 0 10px 0 10px;
+  }
+  .card button {
+    font-size: 20px;
+  }
+  .card__img img {
+    height: 110px;
+  }
+  .local__img img {
+    width: 70%;
+    height: 40%;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+ @media (min-width: 1025px) and (max-width: 1200px) {
+   header img {
+    height: 15vh;
+  }
+  .header__h1 h1 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+  ul li,
+  a {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 6px;
+  }
+  .sobremim {
+    background-size:contain;
+  }
+  .sobremim h3 {
+    font-size: 42px;
+  }
+  .sobremim p {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .dFlex{
+    flex-direction: row;
+  }
+  .card {
+    height: 310px;
+    width: 200px;
+    font-size: 28px;
+  }
+  .card p {
+    margin: 0 10px 0 10px;
+  }
+  .card button {
+    font-size: 22px;
+  }
+  .card__img img {
+    height: 110px;
+  }
+  .local__img img {
+    width: 50%;
+    height: 20%;
+  }
+  footer p {
+    font-size: 14px;
+  }
+} 
+
+
