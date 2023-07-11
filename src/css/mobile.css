@@ -12,12 +12,6 @@
   --botaoDeCompra:#5ab45a;
   
 }
-/* 
-#8F4252 -- cordovan
-#3D7BA0 -- cerulean
-#4D6E82 -- payne's Gray
-#E5BED9
-#8AD6F6 */
 body {
   background-color: var(--corDeFundo);
   height: 100%;
@@ -257,7 +251,7 @@ footer p {
     flex-direction: row;
   }
   .card {
-    height: 200px;
+    height: 240px;
     width: 130px;
     font-size: 16px;
   }
@@ -367,5 +361,3 @@ footer p {
     font-size: 14px;
   }
 } 
-
-
